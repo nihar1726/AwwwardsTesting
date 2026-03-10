@@ -1,0 +1,86 @@
+{
+  "name": "AwwwardsTesting",
+  "projectId": "50741264-e547-46d0-8cfd-edfdad3cf56b",
+  "description": "Group 07 - Friday Presentation.\r\n",
+  "main": "Main.xaml",
+  "dependencies": {
+    "atuipath_utilities": "[1.0.8]",
+    "AwwardsTestingLibrary": "[1.0.7]",
+    "UiPath.System.Activities": "[26.2.0]",
+    "UiPath.Testing.Activities": "[25.10.1]",
+    "UiPath.UIAutomation.Activities": "[26.1.0-preview]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "26.0.187.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "NewtonsoftJson",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "templateType": "TestCase",
+        "fileName": ".templates\\Template01.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "9b99ca22-25cb-455d-b9ec-f8762d9beb63",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TC_01_Explore_HonourMentions.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "40b57dcf-65f5-4ff6-8818-4027196e1c9e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TC_02_Explore_Nominees.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e379755f-f41c-4d65-9ac5-829791db5b7b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TC_03_Explore_Filters.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "bd3f8788-4eb9-410e-933e-68fe3bb3696e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Template_Nihar.xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "CSharp",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
