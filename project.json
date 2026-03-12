@@ -6,6 +6,7 @@
   "dependencies": {
     "atuipath_utilities": "[1.0.8]",
     "AwwardsTestingLibrary": "[1.0.14]",
+    "UiPath.GSuite.Activities": "[3.7.10]",
     "UiPath.System.Activities": "[26.2.1]",
     "UiPath.Testing.Activities": "[25.10.1]",
     "UiPath.UIAutomation.Activities": "[26.1.0-preview]"
@@ -119,24 +120,17 @@
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "e15bab85-99b1-4728-b8de-1f6e5d07010c",
+        "testCaseId": "347e4463-1f35-4e71-9125-4197cc9ec6e3",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "TC_16_Login.xaml"
+        "fileName": "TC_05_Delete_Collection.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "3ebae302-5815-4654-8567-945212c41b87",
+        "testCaseId": "18841286-425f-42bd-b9f2-e26cb07fa800",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "TC_17_Search.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "00eabae6-deb0-4b1e-93b2-4bf782ee4cfb",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "TC_18_Academy.xaml"
+        "fileName": "main.xaml"
       }
     ],
     "saveToCloud": false

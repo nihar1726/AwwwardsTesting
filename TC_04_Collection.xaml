@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TC_04_Collection" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:a="clr-namespace:AwwardsTestingLibrary;assembly=AwwardsTestingLibrary" xmlns:ar="clr-namespace:atuipath_utilities.Report;assembly=atuipath_utilities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TC_04_Collection" this:TC_04_Collection.int_reportID="0" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:ar="clr-namespace:atuipath_utilities.Report;assembly=atuipath_utilities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="suiteID" Type="OutArgument(x:String)" />
     <x:Property Name="testID" Type="OutArgument(x:String)" />
@@ -157,7 +157,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="528.6666666666666,2074" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="866.6666666666666,3298" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -229,43 +229,56 @@
         </OutArgument>
       </ra:StartTest.testId>
     </ra:StartTest>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="488,1364.6666666666667" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="488,2588.6666666666665" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="486,534.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="486,1758.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Awwwards - Website Awards - Best Web Design T" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,474.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="a7463cfe-da73-4e07-bec4-26404447fdae" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Awwwards - Website Awards - Best Web Design T" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,1698.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="a7463cfe-da73-4e07-bec4-26404447fdae" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,280" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,1504" sap2010:WorkflowViewState.IdRef="Sequence_7">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <a:AddToCollection sap:VirtualizedContainerService.HintSize="416,220" sap2010:WorkflowViewState.IdRef="AddToCollection_1">
-                    <a:AddToCollection.int_reportID>
-                      <InArgument x:TypeArguments="x:Int32">
-                        <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">int_reportID</CSharpValue>
-                      </InArgument>
-                    </a:AddToCollection.int_reportID>
-                    <a:AddToCollection.suiteID>
-                      <InArgument x:TypeArguments="x:String">
-                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">suiteID</CSharpValue>
-                      </InArgument>
-                    </a:AddToCollection.suiteID>
-                    <a:AddToCollection.testID>
-                      <InArgument x:TypeArguments="x:String">
-                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">testID</CSharpValue>
-                      </InArgument>
-                    </a:AddToCollection.testID>
-                  </a:AddToCollection>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Explore'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a7463cfe-da73-4e07-bec4-26404447fdae" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="awwwards.com" CVScreenId="038e128a-3d5c-4625-9424-61b8e65c3274" ContentHash="pYAA0XeFz0eBDewMu0f0Ow" CvElementArea="293, 165, 23, 24" CvTextArea="228, 165, 64, 24" CvTextArgument="Explore" CvType="ArrowButton" DesignTimeRectangle="230, 142, 81, 73" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='nav-header-main__link' parentid='header' visibleinnertext='Explore' /&gt;" Guid="537dfacd-2b45-4043-8712-585a2382cf0f" InformativeScreenshot="291f834491b8028d2566dc653a3a5a04.jpg" Reference="I2--pBXVMUm0SABfOYLjGw/IZFepOGrCkaxQE5lCJu5Qg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Awwwards - Website Awards - Best Web Design Trends' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" ReportId="{x:Null}" TestId="{x:Null}" statusInfo="{x:Null}" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="StepStatus_1" Status="Compare" StepDescription="Explore menu opened" StepName="Explore" TakeScreenshot="True" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sites of the Day'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a7463cfe-da73-4e07-bec4-26404447fdae" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="awwwards.com" CVScreenId="57b9114d-5ae1-4967-8297-6eb111478f4e" ContentHash="f3SBgu6pAE6x4_-sCT5tiw" CvTextArea="446, 342, 132, 22" CvTextArgument="Sites of the Day" CvType="Text" DesignTimeRectangle="449, 342, 900, 23" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentclass='search-inspiration__item' parentid='header' visibleinnertext='Sites of the Day' /&gt;" Guid="6d937985-17b1-4307-ac29-c2d1f3461301" InformativeScreenshot="0baf90df5d90aa4c4dcb06e86c74fa9d.jpg" Reference="I2--pBXVMUm0SABfOYLjGw/ITbL-scsWEyxosW8MkWmPw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Awwwards - Website Awards - Best Web Design Trends' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="None" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" ReportId="{x:Null}" TestId="{x:Null}" statusInfo="{x:Null}" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="StepStatus_2" Status="Compare" StepDescription="Site of the day clicked" StepName="Site of the day" TakeScreenshot="True" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'svg'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a7463cfe-da73-4e07-bec4-26404447fdae" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="awwwards.com/websites/sites_of_the_day" ContentHash="mWxWCYlH3UKsbYD7mx0RJQ" DesignTimeRectangle="598, 879, 20, 25" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div&amp;gt;figure&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span&amp;gt;svg' parentid='content' tag='svg' /&gt;" Guid="858dee96-d16d-4988-a701-0228dfc93c81" InformativeScreenshot="e63854c4e188d4c59ef4a22fe3281cfe.jpg" Reference="I2--pBXVMUm0SABfOYLjGw/CKsqmPnTqU2CRCp9zih4NQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Sites Of The Day - Awwwards' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" ReportId="{x:Null}" TestId="{x:Null}" statusInfo="{x:Null}" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="StepStatus_3" Status="Compare" StepDescription="Hovered on a website and clicked on save icon" StepName="Save icon" TakeScreenshot="True" />
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a7463cfe-da73-4e07-bec4-26404447fdae" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="awwwards.com/websites/sites_of_the_day" CVScreenId="5472116c-13ea-482f-9b2f-3f68df2d8167" ContentHash="TzIFmTZx00i5XyRn02vN7Q" CvElementArea="1505, 431, 104, 62" CvTextArea="1535, 450, 43, 19" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="1509, 434, 97, 57" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;ul&amp;gt;li&amp;gt;div&amp;gt;div' isleaf='1' tag='DIV' /&gt;" Guid="9e17f69f-5f7c-4655-82a7-3032b91a6ab0" InformativeScreenshot="e4c85802dc7bbeb020f8f1a7c466b3ae.jpg" Reference="I2--pBXVMUm0SABfOYLjGw/JK2XYPcClEuhBlf6gITldg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Sites Of The Day - Awwwards' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CVScreenId="5472116c-13ea-482f-9b2f-3f68df2d8167" CvTextArea="1082, 450, 157, 22" CvTextArgument="Testing Collection" CvType="Text" DesignTimeRectangle="1086, 443, 153, 38" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='list-collections__title' tag='STRONG' type='' aaname='Testing Collection' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Testing Collection' /&gt;" Guid="84a873cb-9318-47e5-a311-cb60ce1c6d0a" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                  <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" ReportId="{x:Null}" TestId="{x:Null}" statusInfo="{x:Null}" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="416,158.66666666666666" sap2010:WorkflowViewState.IdRef="StepStatus_4" Status="Compare" StepDescription="Save to collection button clicked" StepName="Save button" TakeScreenshot="True" />
                 </Sequence>
               </ActivityAction>
             </uix:NApplicationCard.Body>
