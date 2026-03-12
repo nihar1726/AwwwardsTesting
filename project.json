@@ -116,6 +116,34 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "TC_10_CountryFilter.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "06fbacc1-acaa-488f-ba4b-8e3baa551b1a",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TC_18_Editing_profile.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "590de78f-15a8-47f4-8f7e-7cdeb9f0592a",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TC_19_Posting_Job.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "42aec6f8-2c20-427f-a912-19cb97eaac72",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TC_20_Submit_website.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "951c4ce9-7b25-4dec-ab5b-cdf3e1ba4bb6",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TC_21_Submit_Product.xaml"
       }
     ],
     "saveToCloud": false
