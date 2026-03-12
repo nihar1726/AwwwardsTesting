@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TC_01_Explore_HonourMentions" this:TC_01_Explore_HonourMentions.int_reportID="0" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:a="clr-namespace:AwwardsTestingLibrary;assembly=AwwardsTestingLibrary" xmlns:ar="clr-namespace:atuipath_utilities.Report;assembly=atuipath_utilities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TC_04_Collection" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:a="clr-namespace:AwwardsTestingLibrary;assembly=AwwardsTestingLibrary" xmlns:ar="clr-namespace:atuipath_utilities.Report;assembly=atuipath_utilities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="suiteID" Type="OutArgument(x:String)" />
     <x:Property Name="testID" Type="OutArgument(x:String)" />
@@ -155,13 +155,9 @@
       <AssemblyReference>NPOI.Core</AssemblyReference>
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
-      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="620.6666666666666,2532.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_1">
-    <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="DevName" />
-    </Sequence.Variables>
+  <Sequence sap:VirtualizedContainerService.HintSize="528.6666666666666,2074" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -180,7 +176,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ra:CreateReport ContinueOnError="{x:Null}" DisplayName="Create Report" sap:VirtualizedContainerService.HintSize="416,158.66666666666666" sap2010:WorkflowViewState.IdRef="CreateReport_1" ReportName="TC_01_Open_Honour_Mentions">
+          <ra:CreateReport ContinueOnError="{x:Null}" DisplayName="Create Report" sap:VirtualizedContainerService.HintSize="416,158.66666666666666" sap2010:WorkflowViewState.IdRef="CreateReport_1" ReportName="TC_04_Add_To_Collection">
             <ra:CreateReport.ReportLocation>
               <InArgument x:TypeArguments="x:String">
                 <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\Downloads\\AwwwardsTestingReports"</CSharpValue>
@@ -188,7 +184,7 @@
             </ra:CreateReport.ReportLocation>
             <ra:CreateReport.isCreated>
               <OutArgument x:TypeArguments="x:Int32">
-                <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">int_reportID</CSharpReference>
+                <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">int_reportID</CSharpReference>
               </OutArgument>
             </ra:CreateReport.isCreated>
           </ra:CreateReport>
@@ -204,110 +200,78 @@
         </Sequence>
       </If.Else>
     </If>
-    <ra:StartSuite ContinueOnError="{x:Null}" DisplayName="Start Suite" sap:VirtualizedContainerService.HintSize="488,118.66666666666667" sap2010:WorkflowViewState.IdRef="StartSuite_1" SuiteName="Explore menu">
+    <ra:StartSuite ContinueOnError="{x:Null}" DisplayName="Start Suite" sap:VirtualizedContainerService.HintSize="488,118.66666666666667" sap2010:WorkflowViewState.IdRef="StartSuite_1" SuiteName="Collection">
       <ra:StartSuite.ReportId>
         <InArgument x:TypeArguments="x:Int32">
-          <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">int_reportID</CSharpValue>
+          <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">int_reportID</CSharpValue>
         </InArgument>
       </ra:StartSuite.ReportId>
       <ra:StartSuite.suiteId>
         <OutArgument x:TypeArguments="x:String">
-          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_11">suiteID</CSharpReference>
+          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">suiteID</CSharpReference>
         </OutArgument>
       </ra:StartSuite.suiteId>
     </ra:StartSuite>
-    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="488,118.66666666666667" sap2010:WorkflowViewState.IdRef="StartTest_2" Priority="Low" TestName="TC_01_Open_Honour_Mentions">
+    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="488,118.66666666666667" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Medium" TestName="TC_04_Add_To_Collection">
       <ra:StartTest.ReportId>
         <InArgument x:TypeArguments="x:Int32">
-          <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">int_reportID</CSharpValue>
+          <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">int_reportID</CSharpValue>
         </InArgument>
       </ra:StartTest.ReportId>
       <ra:StartTest.SuiteId>
         <InArgument x:TypeArguments="x:String">
-          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">suiteID</CSharpValue>
+          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">suiteID</CSharpValue>
         </InArgument>
       </ra:StartTest.SuiteId>
       <ra:StartTest.testId>
         <OutArgument x:TypeArguments="x:String">
-          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">testID</CSharpReference>
+          <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">testID</CSharpReference>
         </OutArgument>
       </ra:StartTest.testId>
     </ra:StartTest>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="488,1823.3333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="488,1364.6666666666667" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
-        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="486,993.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="486,534.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Awwwards - Website Awards - Best Web Design T" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,933.3333333333334" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="a7463cfe-da73-4e07-bec4-26404447fdae" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Awwwards - Website Awards - Best Web Design T" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,474.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="a7463cfe-da73-4e07-bec4-26404447fdae" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,738.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_7">
-                  <Sequence.Variables>
-                    <Variable x:TypeArguments="sd2:DataTable" Name="DT_table" />
-                  </Sequence.Variables>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,280" sap2010:WorkflowViewState.IdRef="Sequence_7">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:ReadRange Range="{x:Null}" AddHeaders="True" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="416,229.33333333333334" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="nihar">
-                    <ui:ReadRange.DataTable>
-                      <OutArgument x:TypeArguments="sd2:DataTable">
-                        <CSharpReference x:TypeArguments="sd2:DataTable" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">DT_table</CSharpReference>
-                      </OutArgument>
-                    </ui:ReadRange.DataTable>
-                    <ui:ReadRange.WorkbookPathResource>
-                      <InArgument x:TypeArguments="upr:IResource">
-                        <CSharpValue x:TypeArguments="upr:IResource" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">UiPath.Platform.ResourceHandling.LocalResource.FromPath("TestData\\Group07_DataFetching.xlsx")</CSharpValue>
-                      </InArgument>
-                    </ui:ReadRange.WorkbookPathResource>
-                  </ui:ReadRange>
-                  <Assign sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_1">
-                    <Assign.To>
-                      <OutArgument x:TypeArguments="x:String">
-                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">DevName</CSharpReference>
-                      </OutArgument>
-                    </Assign.To>
-                    <Assign.Value>
-                      <InArgument x:TypeArguments="x:String">
-                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">DT_table.Rows[0]["DevName"].ToString()</CSharpValue>
-                      </InArgument>
-                    </Assign.Value>
-                  </Assign>
-                  <a:HonourMentions DisplayName="HonourMentions" sap:VirtualizedContainerService.HintSize="416,272.6666666666667" sap2010:WorkflowViewState.IdRef="HonourMentions_1">
-                    <a:HonourMentions.DevName>
-                      <InArgument x:TypeArguments="x:String">
-                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_21">DevName</CSharpValue>
-                      </InArgument>
-                    </a:HonourMentions.DevName>
-                    <a:HonourMentions.int_reportID>
+                  <a:AddToCollection sap:VirtualizedContainerService.HintSize="416,220" sap2010:WorkflowViewState.IdRef="AddToCollection_1">
+                    <a:AddToCollection.int_reportID>
                       <InArgument x:TypeArguments="x:Int32">
-                        <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">int_reportID</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">int_reportID</CSharpValue>
                       </InArgument>
-                    </a:HonourMentions.int_reportID>
-                    <a:HonourMentions.suiteID>
+                    </a:AddToCollection.int_reportID>
+                    <a:AddToCollection.suiteID>
                       <InArgument x:TypeArguments="x:String">
-                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">suiteID</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">suiteID</CSharpValue>
                       </InArgument>
-                    </a:HonourMentions.suiteID>
-                    <a:HonourMentions.testID>
+                    </a:AddToCollection.suiteID>
+                    <a:AddToCollection.testID>
                       <InArgument x:TypeArguments="x:String">
-                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">testID</CSharpValue>
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">testID</CSharpValue>
                       </InArgument>
-                    </a:HonourMentions.testID>
-                  </a:HonourMentions>
+                    </a:AddToCollection.testID>
+                  </a:AddToCollection>
                 </Sequence>
               </ActivityAction>
             </uix:NApplicationCard.Body>
             <uix:NApplicationCard.CloseMode>
               <InArgument x:TypeArguments="uix:NAppCloseMode">
-                <CSharpValue x:TypeArguments="uix:NAppCloseMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">UiPath.UIAutomationNext.Enums.NAppCloseMode.Never</CSharpValue>
+                <CSharpValue x:TypeArguments="uix:NAppCloseMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">UiPath.UIAutomationNext.Enums.NAppCloseMode.Never</CSharpValue>
               </InArgument>
             </uix:NApplicationCard.CloseMode>
             <uix:NApplicationCard.OCREngine>
@@ -319,7 +283,7 @@
             </uix:NApplicationCard.OCREngine>
             <uix:NApplicationCard.OpenMode>
               <InArgument x:TypeArguments="uix:NAppOpenMode">
-                <CSharpValue x:TypeArguments="uix:NAppOpenMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">UiPath.UIAutomationNext.Enums.NAppOpenMode.Always</CSharpValue>
+                <CSharpValue x:TypeArguments="uix:NAppOpenMode" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">UiPath.UIAutomationNext.Enums.NAppOpenMode.Always</CSharpValue>
               </InArgument>
             </uix:NApplicationCard.OpenMode>
             <uix:NApplicationCard.TargetApp>
@@ -347,10 +311,10 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ar:exceptionStep sap:VirtualizedContainerService.HintSize="452,378" sap2010:WorkflowViewState.IdRef="exceptionStep_1" str_in_expectedStep="Click explore and go to Honour menions" str_in_stepDescription="Click explore and go to Honour menions" str_in_stepName="Honour mentions menu page">
+              <ar:exceptionStep str_in_expectedStep="{x:Null}" str_in_stepDescription="{x:Null}" sap:VirtualizedContainerService.HintSize="452,378" sap2010:WorkflowViewState.IdRef="exceptionStep_1" str_in_stepName="Add site to collection and remove">
                 <ar:exceptionStep.str_in_actualStep>
                   <InArgument x:TypeArguments="x:String">
-                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">exception.Message</CSharpValue>
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">exception.Message</CSharpValue>
                   </InArgument>
                 </ar:exceptionStep.str_in_actualStep>
                 <ar:exceptionStep.str_in_reportId>

@@ -5,8 +5,8 @@
   "main": "Main.xaml",
   "dependencies": {
     "atuipath_utilities": "[1.0.8]",
-    "AwwardsTestingLibrary": "[1.0.8]",
-    "UiPath.System.Activities": "[26.2.0]",
+    "AwwardsTestingLibrary": "[1.0.14]",
+    "UiPath.System.Activities": "[26.2.1]",
     "UiPath.Testing.Activities": "[25.10.1]",
     "UiPath.UIAutomation.Activities": "[26.1.0-preview]"
   },
@@ -74,6 +74,48 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Template_Nihar.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "251d4c78-882d-4827-9a2f-e73706582155",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TC_06_OpenRequiredPage.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "08cff46a-95b5-41b2-8ef2-d43c7c4246ce",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TC_07_SearchJob.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "351a3893-6a0c-414b-aee6-2297782579e3",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TC_04_Collection.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ae06f4d0-8c33-4d7e-b2a9-dcb2802fca79",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TC_08_JobCategoryFilter.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0a4b07a8-816d-4a04-b410-f92140e34614",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TC_09_TypeFilter.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6afe42c5-36f0-4947-a55b-188d42d2536a",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TC_10_CountryFilter.xaml"
       }
     ],
     "saveToCloud": false
