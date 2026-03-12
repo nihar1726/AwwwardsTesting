@@ -116,6 +116,27 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "TC_10_CountryFilter.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e15bab85-99b1-4728-b8de-1f6e5d07010c",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TC_16_Login.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "3ebae302-5815-4654-8567-945212c41b87",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TC_17_Search.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "00eabae6-deb0-4b1e-93b2-4bf782ee4cfb",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TC_18_Academy.xaml"
       }
     ],
     "saveToCloud": false
